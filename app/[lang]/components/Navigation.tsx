@@ -30,7 +30,7 @@ export default function Navigation({ data, lang }: any) {
 
   return (
     <>
-      <nav className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 transform items-center justify-between gap-x-4 bg-white px-3 py-4 shadow-lg xl:w-[calc(100%-220px)] xl:rounded-b-[24px] xl:py-6">
+      <nav className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 transform items-center justify-between gap-x-4 bg-white px-3 py-4 shadow-lg xl:w-[calc(100%-210px)] xl:rounded-b-[24px] xl:py-6">
         <Link href={`/${lang}`}>
           <Image
             src="/images/logo.png"
@@ -71,59 +71,62 @@ export default function Navigation({ data, lang }: any) {
             },
           )}
         </div>
-        <Link
-          href="https://b2b.principal.croonus.com/prijava"
-          className="hidden items-center space-x-2 sm:flex"
-        >
-          <Image
-            src="/images/navigation/b2b.png"
-            alt="B2B"
-            width={24}
-            height={24}
-            className="blueFilter h-5 w-5 2xl:h-7 2xl:w-7"
-          />
-          <span className="text-sm font-semibold text-blue xl:text-base">
-            B2B
-          </span>
-        </Link>
-        <div className="relative hidden items-center gap-2 xl:flex">
-          <Image
-            src="/images/navigation/worldwide.png"
-            alt="Worldwide"
-            width={24}
-            height={24}
-            className="blueFilter h-4 w-4 2xl:h-6 2xl:w-6"
-          />
-          <div
-            className="flex cursor-pointer items-center gap-2"
-            onClick={() => setLanguageMenu(!languageMenu)}
+        <div className="relative flex sm:ml-auto sm:justify-end sm:gap-4 md:ml-auto xl:ml-0 xl:gap-10">
+          <Link
+            href="https://b2b.principal.croonus.com/prijava"
+            className="hidden space-x-2 sm:flex"
           >
-            <div className="text-sm font-semibold text-blue xl:text-base">
-              {data.languages.button}
-            </div>
             <Image
-              src="/images/arrow.png"
-              alt="Arrow"
+              src="/images/navigation/b2b.png"
+              alt="B2B"
               width={24}
               height={24}
-              className="blueFilter h-6 w-6 cursor-pointer"
+              className="blueFilter h-5 w-5 2xl:h-7 2xl:w-7"
             />
-          </div>
-          {languageMenu && (
-            <div className="absolute -bottom-[94px] -right-6 flex w-[140px] flex-col gap-2 rounded-b-xl bg-white px-4 py-4 shadow-xl">
-              {data.languages.list.map((language: { name: string }) => (
-                <button
-                  key={language.name}
-                  className={clsx('rounded-md text-center text-blue', {
-                    'bg-blue !text-white': lang === language.name,
-                  })}
-                  onClick={() => goToNewDynamicRoute(language.name)}
-                >
-                  {language.name.toUpperCase()}
-                </button>
-              ))}
+            <span className="mt-0.5 text-sm font-semibold text-blue xl:text-base">
+              B2B
+            </span>
+          </Link>
+          <div className="relative mt-[-1px] hidden items-center gap-2 sm:flex">
+            <Image
+              src="/images/navigation/worldwide.png"
+              alt="Worldwide"
+              width={24}
+              height={24}
+              className="blueFilter h-4 w-4 2xl:h-6 2xl:w-6"
+            />
+            <div
+              className="flex cursor-pointer items-center gap-2"
+              onClick={() => setLanguageMenu(!languageMenu)}
+            >
+              <div className="text-sm font-semibold text-blue xl:text-base">
+                {data.languages.button}
+              </div>
+
+              <Image
+                src="/images/arrow.png"
+                alt="Arrow"
+                width={24}
+                height={24}
+                className="blueFilter h-6 w-6 cursor-pointer"
+              />
             </div>
-          )}
+            {languageMenu && (
+              <div className="absolute -bottom-[94px] -right-6 flex w-[140px] flex-col gap-2 rounded-b-xl bg-white px-4 py-4 shadow-xl">
+                {data.languages.list.map((language: { name: string }) => (
+                  <button
+                    key={language.name}
+                    className={clsx('rounded-md text-center text-blue', {
+                      'bg-blue !text-white': lang === language.name,
+                    })}
+                    onClick={() => goToNewDynamicRoute(language.name)}
+                  >
+                    {language.name.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className="xl:hidden">
           <Image
