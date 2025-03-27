@@ -72,10 +72,10 @@ export default function Navigation({ data, lang }: any) {
           )}
         </div>
 
-        <div className="relative flex hidden sm:ml-auto sm:justify-end sm:gap-4 md:ml-auto md:flex xl:ml-0 xl:gap-10">
+        <div className="relative ml-0 flex flex-row gap-4 sm:ml-auto sm:flex sm:justify-end sm:gap-4 xl:ml-0 xl:gap-10">
           <Link
             href="https://b2b.principal.croonus.com/prijava"
-            className="hidden space-x-2 sm:flex"
+            className="ml-32 flex space-x-2 sm:ml-auto sm:flex"
           >
             <Image
               src="/images/navigation/b2b.png"
@@ -88,7 +88,7 @@ export default function Navigation({ data, lang }: any) {
               B2B
             </span>
           </Link>
-          <div className="relative mt-[-0.5px] hidden items-center gap-2 sm:flex">
+          <div className="relative mt-[-0.5px] flex items-center gap-2 sm:ml-auto">
             <Image
               src="/images/navigation/worldwide.png"
               alt="Worldwide"
@@ -194,51 +194,6 @@ export default function Navigation({ data, lang }: any) {
               </Link>
             ),
           )}
-        </div>
-
-        <div className="mt-6 border-t pt-6 md:hidden">
-          <Link
-            href="https://b2b.principal.croonus.com/prijava"
-            className="xl:hidden"
-          >
-            <div className="mt-4 flex items-center gap-2">
-              <Image
-                src="/images/navigation/b2b.png"
-                alt="B2B"
-                width={24}
-                height={24}
-                className="blueFilter h-4 w-4"
-              />
-              <span className="text-sm font-semibold text-blue">B2B</span>
-            </div>
-          </Link>
-          <br />
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/navigation/worldwide.png"
-              alt="Worldwide"
-              width={24}
-              height={24}
-              className="blueFilter h-4 w-4"
-            />
-            <div className="text-sm font-semibold text-blue">
-              {data.languages.button}
-            </div>
-          </div>
-          <div className="mt-4 flex flex-col gap-2 md:hidden">
-            {data.languages.list.map((language: { name: string }) => (
-              <button
-                key={language.name}
-                className={clsx(
-                  'rounded-md p-2 text-sm font-semibold text-blue',
-                  { 'bg-blue !text-white': lang === language.name },
-                )}
-                onClick={() => goToNewDynamicRoute(language.name)}
-              >
-                {language.name.toUpperCase()}
-              </button>
-            ))}
-          </div>
         </div>
       </div>
     </>
