@@ -48,7 +48,7 @@ export default function Distribution({ data, lang }: any) {
       </div>
       <div className="paddingOutSection relative flex flex-col gap-[60px] 2xl:gap-[100px]">
         {/* Preparation Section */}
-        <div className="roundedSection relative mx-auto w-full max-w-[1800px] overflow-hidden">
+        <div className="roundedSection relative mx-auto w-full max-w-[1760px] overflow-hidden">
           <Image
             src="/images/home/distribution/preparation.jpg"
             alt="Preparation"

@@ -71,7 +71,8 @@ export default function Navigation({ data, lang }: any) {
             },
           )}
         </div>
-        <div className="relative flex sm:ml-auto sm:justify-end sm:gap-4 md:ml-auto xl:ml-0 xl:gap-10">
+
+        <div className="relative flex hidden sm:ml-auto sm:justify-end sm:gap-4 md:ml-auto md:flex xl:ml-0 xl:gap-10">
           <Link
             href="https://b2b.principal.croonus.com/prijava"
             className="hidden space-x-2 sm:flex"
@@ -81,19 +82,19 @@ export default function Navigation({ data, lang }: any) {
               alt="B2B"
               width={24}
               height={24}
-              className="blueFilter h-5 w-5 2xl:h-7 2xl:w-7"
+              className="blueFilter mt-0.5 h-5 w-5 2xl:h-7 2xl:w-7"
             />
             <span className="mt-0.5 text-sm font-semibold text-blue xl:text-base">
               B2B
             </span>
           </Link>
-          <div className="relative mt-[-1px] hidden items-center gap-2 sm:flex">
+          <div className="relative mt-[-0.5px] hidden items-center gap-2 sm:flex">
             <Image
               src="/images/navigation/worldwide.png"
               alt="Worldwide"
               width={24}
               height={24}
-              className="blueFilter h-4 w-4 2xl:h-6 2xl:w-6"
+              className="blueFilter mt-0.5 h-4 w-4 2xl:h-6 2xl:w-6"
             />
             <div
               className="flex cursor-pointer items-center gap-2"
@@ -195,7 +196,7 @@ export default function Navigation({ data, lang }: any) {
           )}
         </div>
 
-        <div className="mt-6 border-t pt-6">
+        <div className="mt-6 border-t pt-6 md:hidden">
           <Link
             href="https://b2b.principal.croonus.com/prijava"
             className="xl:hidden"
@@ -224,7 +225,7 @@ export default function Navigation({ data, lang }: any) {
               {data.languages.button}
             </div>
           </div>
-          <div className="mt-4 flex flex-col gap-2">
+          <div className="mt-4 flex flex-col gap-2 md:hidden">
             {data.languages.list.map((language: { name: string }) => (
               <button
                 key={language.name}
