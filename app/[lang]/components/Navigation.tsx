@@ -31,16 +31,18 @@ export default function Navigation({ data, lang }: any) {
   return (
     <>
       <nav className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 transform items-center justify-between gap-x-4 bg-white px-3 py-4 shadow-lg xl:w-[calc(100%-210px)] xl:rounded-b-[24px] xl:py-6">
-        <Link href={`/${lang}`}>
-          <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={150}
-            height={50}
-            className="h-auto w-[150px] 2xl:w-[260px]"
-          />
-        </Link>
-        <div className="hidden items-center gap-2 xl:flex 2xl:gap-4">
+        <div className="flex-shrink-0">
+          <Link href={`/${lang}`}>
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={150}
+              height={50}
+              className="h-auto w-[150px] 2xl:w-[260px]"
+            />
+          </Link>
+        </div>
+        <div className="hidden items-center justify-center gap-2 xl:flex 2xl:gap-4">
           {data?.links?.map(
             (link: { text: string; href: string }, index: number) => {
               return (
@@ -72,7 +74,7 @@ export default function Navigation({ data, lang }: any) {
           )}
         </div>
 
-        <div className="relative ml-0 flex flex-row gap-4 sm:ml-auto sm:flex sm:justify-end sm:gap-4 xl:ml-0 xl:gap-10">
+        <div className="relative ml-[-132px] flex flex-row gap-6 sm:ml-auto sm:flex sm:justify-end sm:gap-4 xl:ml-0 xl:gap-10">
           <Link
             href="https://b2b.principal.croonus.com/prijava"
             className="ml-32 flex space-x-2 sm:ml-auto sm:flex"

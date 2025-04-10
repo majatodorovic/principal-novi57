@@ -1174,19 +1174,6 @@
           ]
         },
         {
-          "title": "PALMINO ULJE",
-          "imageSrc": "/images/offer/categories/palmino-ulje.jpg",
-          "about": "",
-          "table": [
-            {
-              "column1": "Ulje",
-              "column2": "BARKA",
-              "column3": "Indonezija",
-              "column4": "20kg"
-            }
-          ]
-        },
-        {
           "title": "SARDINA",
           "imageSrc": "/images/offer/categories/sardina.jpg",
           "about": "",
@@ -1202,6 +1189,19 @@
               "column2": "BARKA",
               "column3": "",
               "column4": "125g"
+            }
+          ]
+        },
+        {
+          "title": "PALMINO ULJE",
+          "imageSrc": "/images/offer/categories/palmino-ulje.jpg",
+          "about": "",
+          "table": [
+            {
+              "column1": "Ulje",
+              "column2": "BARKA",
+              "column3": "Indonezija",
+              "column4": "20kg"
             }
           ]
         }
@@ -1376,7 +1376,7 @@
         },
         {
           "title": "SLATKI KROMPIR",
-          "imageSrc": "/images/offer/categories/no-image.webp",
+          "imageSrc": "/images/offer/categories/slatki-krompir.jpg",
           "about": "",
           "table": []
         },
@@ -1397,7 +1397,7 @@
       ]
     },
     {
-      "icon": "/images/offer/swiper/big-fish.png",
+      "icon": "/images/offer/swiper/povrce.png",
       "text": "Povrće",
       "items": [
         {
@@ -1724,19 +1724,6 @@
           ]
         },
         {
-          "title": "PILEĆI ĆEVAP",
-          "imageSrc": "/images/offer/categories/no-image.webp",
-          "about": "",
-          "table": [
-            {
-              "column1": "Pakovani",
-              "column2": "PIKOLINA",
-              "column3": "Srbija",
-              "column4": "500g"
-            }
-          ]
-        },
-        {
           "title": "ROLOVANO PILE",
           "imageSrc": "/images/offer/categories/rolovano-pile.jpg",
           "about": "",
@@ -1776,6 +1763,19 @@
               "column2": "PIKOLINA",
               "column3": "Srbija",
               "column4": "300g"
+            }
+          ]
+        },
+        {
+          "title": "PILEĆI ĆEVAP",
+          "imageSrc": "/images/offer/categories/no-image.webp",
+          "about": "",
+          "table": [
+            {
+              "column1": "Pakovani",
+              "column2": "PIKOLINA",
+              "column3": "Srbija",
+              "column4": "500g"
             }
           ]
         }

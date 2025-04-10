@@ -1374,7 +1374,7 @@
         },
         {
           "title": "Sweet potato",
-          "imageSrc": "/images/offer/categories/no-image.webp",
+          "imageSrc": "/images/offer/categories/slatki-krompir.jpg",
           "about": "",
           "table": []
         },
@@ -1395,7 +1395,7 @@
       ]
     },
     {
-      "icon": "/images/offer/swiper/big-fish.png",
+      "icon": "/images/offer/swiper/povrce.png",
       "text": "Vegetables",
       "items": [
         {
