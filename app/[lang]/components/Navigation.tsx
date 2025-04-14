@@ -84,7 +84,7 @@ export default function Navigation({ data, lang }: any) {
               alt="B2B"
               width={24}
               height={24}
-              className="blueFilter mt-0.5 h-5 w-5 2xl:h-7 2xl:w-7"
+              className="blueFilter mt-0.5 h-6 w-6 2xl:h-7 2xl:w-7"
             />
             <span className="mt-0.5 text-sm font-semibold text-blue xl:text-base">
               B2B
@@ -96,7 +96,7 @@ export default function Navigation({ data, lang }: any) {
               alt="Worldwide"
               width={24}
               height={24}
-              className="blueFilter mt-0.5 h-4 w-4 2xl:h-6 2xl:w-6"
+              className="blueFilter mt-0.5 h-5 w-5 2xl:h-6 2xl:w-6"
             />
             <div
               className="flex cursor-pointer items-center gap-2"
@@ -111,7 +111,7 @@ export default function Navigation({ data, lang }: any) {
                 alt="Arrow"
                 width={24}
                 height={24}
-                className="blueFilter h-6 w-6 cursor-pointer"
+                className="blueFilter h-5 w-5 cursor-pointer"
               />
             </div>
             {languageMenu && (

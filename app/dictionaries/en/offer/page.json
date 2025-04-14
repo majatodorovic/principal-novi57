@@ -1172,19 +1172,6 @@
           ]
         },
         {
-          "title": "PALM OIL",
-          "imageSrc": "/images/offer/categories/palmino-ulje.jpg",
-          "about": "",
-          "table": [
-            {
-              "column1": "Oil",
-              "column2": "BARKA",
-              "column3": "Indonesia",
-              "column4": "20kg"
-            }
-          ]
-        },
-        {
           "title": "SARDINE",
           "imageSrc": "/images/offer/categories/sardina.jpg",
           "about": "",
@@ -1200,6 +1187,19 @@
               "column2": "BARKA",
               "column3": "",
               "column4": "125g"
+            }
+          ]
+        },
+        {
+          "title": "PALM OIL",
+          "imageSrc": "/images/offer/categories/palmino-ulje.jpg",
+          "about": "",
+          "table": [
+            {
+              "column1": "Oil",
+              "column2": "BARKA",
+              "column3": "Indonesia",
+              "column4": "20kg"
             }
           ]
         }
@@ -1722,19 +1722,6 @@
           ]
         },
         {
-          "title": "CHICKEN KEBABS",
-          "imageSrc": "/images/offer/categories/no-image.webp",
-          "about": "",
-          "table": [
-            {
-              "column1": "Packaged",
-              "column2": "PIKOLINA",
-              "column3": "Serbia",
-              "column4": "500g"
-            }
-          ]
-        },
-        {
           "title": "ROLLED CHICKEN",
           "imageSrc": "/images/offer/categories/rolovano-pile.jpg",
           "about": "",
@@ -1774,6 +1761,19 @@
               "column2": "PIKOLINA",
               "column3": "Serbia",
               "column4": "300g"
+            }
+          ]
+        },
+        {
+          "title": "CHICKEN KEBABS",
+          "imageSrc": "/images/offer/categories/no-image.webp",
+          "about": "",
+          "table": [
+            {
+              "column1": "Packaged",
+              "column2": "PIKOLINA",
+              "column3": "Serbia",
+              "column4": "500g"
             }
           ]
         }
