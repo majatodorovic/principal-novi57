@@ -38,7 +38,7 @@ export default function Navigation({ data, lang }: any) {
               alt="Logo"
               width={150}
               height={50}
-              className="h-auto w-[150px] 2xl:w-[260px]"
+              className="h-auto w-[110px] 2xl:w-[260px]"
             />
           </Link>
         </div>
@@ -74,7 +74,7 @@ export default function Navigation({ data, lang }: any) {
           )}
         </div>
 
-        <div className="relative ml-[-132px] flex flex-row gap-6 sm:ml-auto sm:flex sm:justify-end sm:gap-4 xl:ml-0 xl:gap-10">
+        <div className="relative ml-[-138px] flex flex-row gap-3 sm:ml-auto sm:flex sm:justify-end sm:gap-4 xl:ml-0 xl:gap-10">
           <Link
             href="https://b2b.principal.croonus.com/prijava"
             className="ml-32 flex space-x-2 sm:ml-auto sm:flex"
@@ -86,7 +86,7 @@ export default function Navigation({ data, lang }: any) {
               height={24}
               className="blueFilter mt-0.5 h-6 w-6 2xl:h-7 2xl:w-7"
             />
-            <span className="mt-0.5 text-sm font-semibold text-blue xl:text-base">
+            <span className="mt-1 text-sm font-semibold text-blue sm:mt-0.5 xl:text-base">
               B2B
             </span>
           </Link>
@@ -111,7 +111,7 @@ export default function Navigation({ data, lang }: any) {
                 alt="Arrow"
                 width={24}
                 height={24}
-                className="blueFilter h-5 w-5 cursor-pointer"
+                className="blueFilter ml-[-5px] h-6 w-6 cursor-pointer"
               />
             </div>
             {languageMenu && (
